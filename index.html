@@ -1,1 +1,12 @@
-Hello world
+<!DOCTYPE html>
+<!-- See https://mathiasbynens.github.io/rel-noopener/ -->
+<meta charset="utf-8">
+<title>Go back!</title>
+<h1>Placeholder</h1>
+<script>
+	if (window.opener) {
+		document.querySelector('h1').innerHTML = 'The previous tab location is: ' + opener.location;
+	} else {
+		document.querySelector('h1').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
+	}
+</script>
